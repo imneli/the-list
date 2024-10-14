@@ -28,3 +28,36 @@
   width: auto;
   height: auto;
 }
+
+.infoContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: #fefefe;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 580px) {
+  .hero {
+    max-width: 80%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .infoContent {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+}

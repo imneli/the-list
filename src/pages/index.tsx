@@ -32,7 +32,19 @@ export default function Home() {
           <div className={styles.logoContent}>
             <Image className={styles.hero}alt='Logo Tarefas'src={HeroImage} priority/>
             <h1 className={styles.title}>Sistema feito para você se organizar <br />Priorize seus estudos.</h1>
+
+            <div className={styles.infoContent}>
+              <section className={styles.box}>
+                <span>+90 Posts</span>
+              </section>
+              <section className={styles.box}>
+                <span>+12 Comentários</span>
+              </section>
+            </div>
+          
+          
           </div>
+         
       </main>
       </div>
     </>
