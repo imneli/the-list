@@ -3,6 +3,8 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/home.module.css";
 
+import HeroImage from '../../public/assets/hero.png'
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -24,9 +26,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+        className={`${styles.container} ${geistSans.variable} ${geistMono.variable}`}
       >
-        <h1>my project</h1>
+      <main className={styles.main}>
+          <div className={styles.logoContent}>
+            <Image className={styles.hero}alt='Logo Tarefas'src={HeroImage} priority/>
+            <h1 className={styles.title}>Sistema feito para você se organizar <br />Priorize seus estudos.</h1>
+          </div>
+      </main>
       </div>
     </>
   );
